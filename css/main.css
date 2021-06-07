@@ -1,0 +1,101 @@
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+}
+
+.main about {
+  flex: 0 1 350px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.main advantages {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 350px;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
+
+.main connect {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 350px;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
+
+.main facts {
+  background-image: url(../img/facts_1920_500.jpg);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 500px;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
+
+.main intro {
+  background-image: url(../img/intro_1920_500.jpg);
+  color: white;
+  flex: 0 1 400px;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
+
+.main specialization {
+  flex: 0 1 300px;
+  padding: 10px
+  margin: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    display: block;
+  }
+
+  .main advantages {
+    display: block;
+  }
+
+  .main connect {
+    display: block;
+  }
+
+  .main facts {
+    display: block;
+  }
+
+  .main intro {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main {
+    display: block;
+  }
+
+  .main advantages {
+    display: block;
+  }
+
+  .main connect {
+    display: block;
+  }
+
+  .main facts {
+    display: block;
+  }
+
+  .main intro {
+    display: block;
+  }
+}
