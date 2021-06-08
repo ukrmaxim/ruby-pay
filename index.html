@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="css/button.css">
   <link rel="stylesheet" href="css/text.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/parallax.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/header.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/footer.js"></script>
 </head>
 <body>
 <header>
@@ -35,14 +41,14 @@
   </div>
 </header>
   <div class="main">
-    <intro>
+    <intro data-parallax="scroll" data-image-src="img/intro_1920_500.jpg">
       <div class="title">ИНТЕРНЕТ ЭКВАЙРИНГ от RUBY PAY</div>
       <h2>надежный сервис в сфере онлайн платежей</h2>
     </intro>
     <specialization>
       <div class="title">Наша специализация - прием платежей онлайн из любой точки мира!</div>
     </specialization>
-    <facts id="facts">
+    <facts data-parallax="scroll" data-image-src="img/facts_1920_500.jpg" id="facts">
       <div class="fact">
         <p class="title">1</p>
         <p>день, среднее время на одобрение заявки на подключение</p>
@@ -60,10 +66,10 @@
         <p>банка и финансовых компаний, работающих с нами</p>
       </div>
     </facts>
-    <div class="medium-title">Как подключиться?
+    <div class="medium-title" id="connect">Как подключиться?
       <p>Всего 4 этапа для старта</p>
       </div>
-    <connect id="connect">
+    <connect>
       <div class="stage">
         <p class="circle">1</p>
         <p>Заполнить заявку на подключение</p>
@@ -85,10 +91,10 @@
         <p class="paragraph">Интеграция сервиса на Вашем сайте</p>
       </div>
     </connect>
-    <div class="medium-title">Преимущества работы с нами
+    <div class="medium-title" id="advantages">Преимущества работы с нами
         <p>это возможность не только быстро подключить свой бизнес к приему платежей, но и возможность получать выплаты на электронные деньги и BTC.</p>
       </div>
-    <advantages id="advantages">
+    <advantages>
       <div class="adv">
         <p><img src="img/1.png" alt="RPay"></p>
         <p>HIGH RISK платежи</p>
