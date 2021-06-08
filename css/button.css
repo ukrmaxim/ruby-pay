@@ -14,19 +14,3 @@
   background: #FF9800;
   transition: all ease .3s;
 }
-
-.button-up{
-  background: url(../img/button_up.png) center/80% no-repeat #bd9840;
-  width: 64px;
-  height: 64px;
-  color: #fff;
-  padding: 15px;
-  margin: 740px 20px 20px;
-  border-radius: 30px;
-}
-
-.button-up:hover{
-  cursor: pointer;
-  background: url(../img/button_up.png) center/80% no-repeat #FF9800;
-  transition: all ease .3s;
-}

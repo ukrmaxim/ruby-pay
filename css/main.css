@@ -54,7 +54,7 @@
   margin: 10px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 960px) {
   .main {
     display: block;
   }
@@ -76,7 +76,7 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 640px) {
   .main {
     display: block;
   }
@@ -95,5 +95,6 @@
 
   .main intro {
     display: block;
+    margin-top: 24px;
   }
 }

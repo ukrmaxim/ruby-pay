@@ -1,10 +1,28 @@
 footer {
+  margin: 10px;
+  padding: 10px;
   font-size: 20px;
   font-weight: bold;
   height: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-nav-list {
+  list-style-type: none;
+}
+
+.footer-nav-item {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.footer-nav-list .footer-nav-item {
+  display: inline-block;
 }
 
 .footer-nav-link {
@@ -16,4 +34,20 @@ footer {
 .footer-nav-link:hover {
   color: #000;
   transition: all ease .3s;
+}
+
+@media all and (max-width: 640px) {
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  .footer-nav-list {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-nav-list .footer-nav-item {
+    display: block;
+  }
 }

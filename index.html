@@ -16,15 +16,15 @@
   <script type="text/javascript" charset="utf-8" src="script/parallax.min.js"></script>
   <script type="text/javascript" charset="utf-8" src="script/header.js"></script>
   <script type="text/javascript" charset="utf-8" src="script/footer.js"></script>
-  <script type="text/javascript" charset="utf-8" src="script/button_up.js"></script>
 </head>
 <body>
+
 <header>
-<div class="header-logo">
-  <img class="header-logo" src="img/ruby_pay.png" alt="RPay"/>
-</div>
-  <div class="header-nav">
-    <ul>
+<div class="header-nav">
+  <div>
+    <img class="header-logo" src="img/ruby_pay.png" alt="RPay"/>
+  </div>
+    <ul class = "header-nav-list" id="navi-list">
       <li class="header-nav-item">
       <a class="header-nav-link" href="#facts">О нас</a>
       </li>
@@ -38,7 +38,12 @@
       <a class="header-nav-link" href="#about">Заказать</a>
       </li>
     </ul>
+  <div class="menu" id="toggle-button">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
   </div>
+ </div>
 </header>
   <div class="main">
     <intro data-parallax="scroll" data-image-src="img/intro_1920_500.jpg">
@@ -46,9 +51,9 @@
       <h2>надежный сервис в сфере онлайн платежей</h2>
     </intro>
     <specialization>
-      <div class="title">Наша специализация - прием платежей онлайн из любой точки мира!</div>
+      <div class="title" id="facts">Наша специализация - прием платежей онлайн из любой точки мира!</div>
     </specialization>
-    <facts data-parallax="scroll" data-image-src="img/facts_1920_500.jpg" id="facts">
+    <facts data-parallax="scroll" data-image-src="img/facts_1920_500.jpg" >
       <div class="fact">
         <p class="title">1</p>
         <p>день, среднее время на одобрение заявки на подключение</p>
@@ -130,25 +135,32 @@
     </about>
   </div>
 
-<div style="position: absolute; top: 456px; right: 0px; display:none;" class="button-up"></div>
-
 <footer>
-  <div class="header-nav">
-    <ul>
-      <li class="header-nav-item">
+  <div class="footer-nav">
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item">
       <a class="footer-nav-link" href="#facts">О нас</a>
       </li>
-      <li class="header-nav-item">
+      <li class="footer-nav-item">
       <a class="footer-nav-link" href="#connect">Как подключить</a>
       </li>
-      <li class="header-nav-item">
+      <li class="footer-nav-item">
       <a class="footer-nav-link" href="#advantages">Почему мы</a>
       </li>
-      <li class="header-nav-item">
+      <li class="footer-nav-item">
       <a class="footer-nav-link" href="#about">Заказать</a>
       </li>
     </ul>
   </div>
 </footer>
 </body>
+
+<script type="text/javascript">
+const toggleButton = document.getElementById('toggle-button');
+const naviList = document.getElementById('navi-list');
+
+toggleButton.addEventListener('click', () => {
+  naviList.classList.toggle('active');
+})
+</script>
 </html>
