@@ -8,8 +8,7 @@
   background-position: center;
   background-color: #333;
   color: whitesmoke;
-  font-weight: bold;
-  font-size: 28px;
+  font-size: 24px;
   text-align:center;
 }
 
@@ -20,15 +19,14 @@ opacity: 0.75;
 
 .main .grid li.small{
   flex-basis: 25%;
-}
-
-.main .grid li.large{
-  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 @media (max-width: 1000px){
-  .main .grid li.small,
-  .main .grid li.large{
+  .main .grid li.small{
   flex-basis: 100%;
   }
 }

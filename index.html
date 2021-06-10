@@ -20,15 +20,23 @@
     <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   	<script type="text/javascript" charset="utf-8" src="script/parallax.min.js"></script>
   	<script type="text/javascript" charset="utf-8" src="script/header.js"></script>
+  	<script type="text/javascript" charset="utf-8" src="script/burger.js"></script>
 </head>
 <body>
 	<header>
 		<h2><a href="#"><img src="img/ruby_pay.png" alt="RPay"/></a></h2>
 		<nav>
-			<li><a class="scroll" href="#about">О нас</a></li>
-			<li><a class="scroll" href="#connect">Подключение</a></li>
-			<li><a class="scroll" href="#features">Почему мы</a></li>
-			<li><a class="scroll" href="#contacts">Контакты</a></li>
+			<ul>
+				<li><a class="scroll" href="#about">О нас</a></li>
+				<li><a class="scroll" href="#connect">Подключение</a></li>
+				<li><a class="scroll" href="#features">Почему мы</a></li>
+				<li><a class="scroll" href="#contacts">Контакты</a></li>
+			</ul>
+			<div class="nav__icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</nav>
 	</header>
 
@@ -43,13 +51,13 @@
 		<hr>
 		<ul class="grid">
 			<li class="small" style="background-image: url(img/1day.jpg);">
-				<p>1</p>день, среднее время на одобрение заявки на подключение</li>
+				<p>1</p><p>день, среднее время на одобрение заявки на подключение</p></li>
 			<li class="small" style="background-image: url(img/client.jpg);">
-				<p>18</p>среднее количество клиентов, подключаемых к сервису в месяц</li>
+				<p>18</p><p>среднее количество клиентов, подключаемых к сервису в месяц</p></li>
 			<li class="small" style="background-image: url(img/btc.jpg);">
-				<p>10500</p>среднее количество успешных транзакций каждый день</li>
+				<p>10500</p><p>среднее количество успешных транзакций каждый день</p></li>
 			<li class="small" style="background-image: url(img/bank.webp);">
-				<p>33</p>банка и финансовых компаний, работающих с нами</li>
+				<p>33</p><p>банка и финансовых компаний, работающих с нами</p></li>
 	</section>
 	
 	<section class="features" id="features">
