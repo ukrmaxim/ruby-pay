@@ -26,22 +26,17 @@
 }
 
 @media (max-width: 1000px){
-
   .features .grid li{
-    flex-basis: 70%;
-    margin-bottom: 65px;
+    flex-basis: 50%;
   }
 
   .features .grid li:last-child{
     margin-bottom: 0;
   }
-
 }
 
-@media (max-width: 600px){
-
+@media (max-width: 800px){
   .features .grid li{
     flex-basis: 100%;
   }
-
 }

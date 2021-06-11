@@ -2,7 +2,6 @@
   padding: 20px;
   height: 350px;
   border-radius: 3px;
-
   background-clip: content-box;
   background-size: cover;
   background-position: center;
@@ -25,7 +24,13 @@ opacity: 0.75;
   flex-direction: column;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1300px){
+  .main .grid li.small{
+  flex-basis: 50%;
+  }
+}
+
+@media (max-width: 800px){
   .main .grid li.small{
   flex-basis: 100%;
   }
